@@ -126,5 +126,12 @@ while True:
         ball.dx *= -1
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
+    if score_a == 10:
+        pen.goto(0, 0)
+        pen.write("PLAYER A WINS", align="center", font=("Courier", 30, "normal"))
+    elif score_b ==10:
+        pen.goto(0,0)
+        pen.write("PLAYER B WINS", align="center", font=("Courier", 30, "normal"))
+
 
 
